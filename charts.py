@@ -5,7 +5,7 @@ import seaborn as sns
 import streamlit as st
 
 st.set_page_config( page_title= "Multipage app")
-st.title("Main Page")
+st.title("Displaying charts")
 
 df = pd.read_excel('amazon_raw_data.xlsx')
 df.drop(['Name'],axis=1,inplace=True)
