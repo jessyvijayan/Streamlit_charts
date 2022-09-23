@@ -38,9 +38,6 @@ if check_password():
     df = pd.read_excel('amazon_raw_data.xlsx')
     df.drop(['Name'],axis=1,inplace=True)
 
-    authenticator.logout('Logout','sidebar')
-    st.sidebar.title(f'Welcome {name}')
-    
     ## line chart
     st.write("**This is a line chart**")
     st.write('Please select the required axes')
